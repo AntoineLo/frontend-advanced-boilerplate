@@ -7,8 +7,10 @@ seb:
   city: Paris, France
   wifi: true
   tv: false
-  nespress: true
+  nespresso: true
   rating: 3
+  kitchen: true
+  drink: false
 romain:
   owner_name: Romain Paillard
   picture: card-london.jpeg
@@ -20,6 +22,8 @@ romain:
   tv: false
   nespresso: true
   rating: 4
+  kitchen: false
+  drink: true
 antoine:
   owner_name: Antoine Loron
   picture: card-paris.jpg
@@ -31,3 +35,5 @@ antoine:
   tv: true
   nespresso: true
   rating: 5
+  kitchen: true
+  drink: true

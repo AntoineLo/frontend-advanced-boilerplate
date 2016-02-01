@@ -6,9 +6,13 @@
   align-items: center;
   padding: 30px;
   padding-left: 0;
+  i {
+    padding: 3px;
+  }
 }
 .header-flat h1 {
   font-size: 18px;
+  margin-top: 0;
 }
 .header-flat p {
     font-weight: normal;

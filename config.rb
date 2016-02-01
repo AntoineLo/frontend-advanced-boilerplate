@@ -89,6 +89,6 @@ end
 
   # Dynamic pages
 
-["antoine", "seb", "romain"].each do |name|
+data.flats.keys.each do |name|
   proxy "/#{name}.html", "/show.html", :locals => { :owner => name }, :ignore => true
 end

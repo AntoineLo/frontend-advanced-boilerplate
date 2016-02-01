@@ -5,7 +5,7 @@
 
 <!-- Inject flat data in template -->
 
-<div class="banner half-banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('<%= image_path flat.picture %>');">
+<div class="banner half-banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%), url('<%= image_path flat.picture %>'); background-position: bottom">
 </div>
 
 <div class="header-flat">
@@ -20,11 +20,7 @@
         <div class="header-flat-name">
           <h1><%= flat.summary %></h1>
           <p><%= flat.city %></p>
-          <i class="fa fa-star" style="color: #ffb400"></i>
-          <i class="fa fa-star" style="color: #ffb400"></i>
-          <i class="fa fa-star" style="color: #ffb400"></i>
-          <i class="fa fa-star" style="color: #ffb400"></i>
-          <i class="fa fa-star" style="color: #cacccd"></i>
+          <%= "<i class='fa fa-star' style='color: #ffb400'></i>" * flat.rating.to_i %><%= "<i class='fa fa-star' style='color: #cacccd'></i>" * (5 - flat.rating) %>
         </div>
       </div>
     </div>
@@ -68,14 +64,14 @@
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
-              <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
+              <li class=<%= "hidden" if flat.kitchen == false %>><i class="fa fa-cutlery"></i><strong>Kitchen</strong></li>
+              <li class=<%= "hidden" if flat.wifi == false %>><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4">
             <ul class="list-unstyled">
-              <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
-              <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
+              <li class=<%= "hidden" if flat.tv == false %>><i class="fa fa-desktop"></i><strong>TV</strong></li>
+              <li class=<%= "hidden" if flat.drink == false %>><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
             </ul>
           </div>
         </div>
