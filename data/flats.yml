@@ -1,0 +1,33 @@
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-paris.jpg
+  owner_picture: seb.jpg
+  name: Seb's home
+  summary: Charming room in Montmartre
+  city: Paris, France
+  wifi: true
+  tv: false
+  nespress: true
+  rating: 3
+romain:
+  owner_name: Romain Paillard
+  picture: card-london.jpeg
+  owner_picture: romain.jpeg
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  city: London, UK
+  wifi: false
+  tv: false
+  nespresso: true
+  rating: 4
+antoine:
+  owner_name: Antoine Loron
+  picture: card-paris.jpg
+  owner_picture: http://placehold.it/150x150
+  name: Antoine's home
+  summary: Cosy flat near Canal Saint Martin
+  city: Paris, France
+  wifi: true
+  tv: true
+  nespresso: true
+  rating: 5
